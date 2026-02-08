@@ -1,10 +1,10 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Mail, Phone } from 'lucide-react'
 import { siteConfig } from '../config/site-config'
 import { AnimatedSection } from './ui/AnimatedSection'
 import { Button } from './ui/Button'
 
 export function FinalCTA() {
-  const { finalCta } = siteConfig
+  const { finalCta, contact } = siteConfig
 
   return (
     <section
@@ -26,17 +26,37 @@ export function FinalCTA() {
             {finalCta.subheadline}
           </p>
 
-          {/* CTA */}
-          <Button href={finalCta.cta.href} size="lg" className="w-full sm:w-auto">
-            {finalCta.cta.label}
-            <ArrowRight size={20} />
-          </Button>
+          {/* Contact options */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-10">
+            <Button href={contact.emailLink} size="lg" className="w-full sm:w-auto">
+              <Mail size={20} />
+              Email David
+            </Button>
+            <Button href={contact.phoneLink} variant="secondary" size="lg" className="w-full sm:w-auto">
+              <Phone size={20} />
+              Call {contact.phone}
+            </Button>
+          </div>
 
-          {/* Booking embed placeholder */}
-          <div className="mt-10 sm:mt-12 p-6 sm:p-8 rounded-xl border-2 border-dashed border-dark-lighter">
-            <p className="text-slate-muted text-sm">
-              Calendly or booking form embed will go here
+          {/* What to expect */}
+          <div className="mt-2 p-6 sm:p-8 rounded-xl bg-dark-light/40 border border-dark-lighter">
+            <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-3">
+              What happens next?
             </p>
+            <div className="flex flex-col sm:flex-row gap-6 text-left sm:text-center max-w-2xl mx-auto">
+              <div className="flex-1">
+                <p className="text-slate font-medium mb-1">1. Reach out</p>
+                <p className="text-slate-dim text-sm">Email or call — tell me a bit about your goals.</p>
+              </div>
+              <div className="flex-1">
+                <p className="text-slate font-medium mb-1">2. Free discovery call</p>
+                <p className="text-slate-dim text-sm">20 minutes. No sales pitch — just an honest conversation.</p>
+              </div>
+              <div className="flex-1">
+                <p className="text-slate font-medium mb-1">3. Your plan</p>
+                <p className="text-slate-dim text-sm">If we're a fit, I build your personalized program.</p>
+              </div>
+            </div>
           </div>
 
           {/* Alt contact */}

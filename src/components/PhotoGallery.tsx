@@ -12,6 +12,7 @@ export function PhotoGallery() {
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const total = gallery.images.length
   const touchRef = useRef<{ startX: number; startY: number } | null>(null)
+  const wasSwipeRef = useRef(false)
 
   const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % total)
@@ -56,13 +57,17 @@ export function PhotoGallery() {
       startX: e.touches[0].clientX,
       startY: e.touches[0].clientY,
     }
+    wasSwipeRef.current = false
   }
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (!touchRef.current) return
     const dx = e.changedTouches[0].clientX - touchRef.current.startX
     const dy = e.changedTouches[0].clientY - touchRef.current.startY
-    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+    const wasSwipe = Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5
+
+    if (wasSwipe) {
+      wasSwipeRef.current = true
       if (dx < 0) next()
       else prev()
     }
@@ -70,6 +75,14 @@ export function PhotoGallery() {
   }
 
   const openLightbox = () => setLightboxOpen(true)
+
+  // Handle image tap — only open lightbox if it wasn't a swipe gesture
+  const handleImageTap = () => {
+    if (!wasSwipeRef.current) {
+      openLightbox()
+    }
+    wasSwipeRef.current = false
+  }
 
   return (
     <>
@@ -103,6 +116,7 @@ export function PhotoGallery() {
                       transform: i === current ? 'scale(1)' : 'scale(1.05)',
                       zIndex: i === current ? 1 : 0,
                     }}
+                    onClick={() => i === current && handleImageTap()}
                   >
                     {/* Blurred background fill — shows full-bleed color behind contained image */}
                     <img
@@ -138,10 +152,10 @@ export function PhotoGallery() {
                   </p>
                 </div>
 
-                {/* Click to expand — desktop only */}
+                {/* Click to expand — visible on mobile, hidden on desktop unless hovering */}
                 <button
-                  onClick={openLightbox}
-                  className="absolute top-3 right-3 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-dark/60 backdrop-blur-sm border border-dark-lighter flex items-center justify-center text-slate opacity-0 group-hover:opacity-80 transition-opacity hover:bg-gold-600/20 hover:border-gold-600/40 cursor-pointer"
+                  onClick={(e) => { e.stopPropagation(); openLightbox() }}
+                  className="absolute top-3 right-3 z-10 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-dark/60 backdrop-blur-sm border border-dark-lighter flex items-center justify-center text-slate opacity-70 sm:opacity-0 sm:group-hover:opacity-80 transition-opacity hover:bg-gold-600/20 hover:border-gold-600/40 cursor-pointer"
                   aria-label="View full image"
                 >
                   <Maximize2 size={16} />
