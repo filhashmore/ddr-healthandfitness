@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import { siteConfig } from '../config/site-config'
 import { AnimatedSection } from './ui/AnimatedSection'
 import { Button } from './ui/Button'
