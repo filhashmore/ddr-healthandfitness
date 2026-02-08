@@ -5,7 +5,7 @@ export const siteConfig = {
     description:
       'Personalized training & nutrition coaching from David D. Rogers — AFAA certified, 25+ years experience. Hybrid coaching in Nashville + online anywhere.',
     author: 'David D. Rogers',
-    url: 'https://ddrhealthandfitness.com',
+    url: 'https://ddr-healthandfitness.vercel.app',
   },
 
   contact: {
