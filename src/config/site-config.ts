@@ -269,7 +269,7 @@ export const siteConfig = {
         icon: 'Flame',
         title: "I've Done the Hard Stuff Myself",
         description:
-          "Two Ironmans. A 100-mile ultra. Powerlifting championships. HYROX. I don't coach from theory — I coach from experience. I know what it takes because I've lived it.",
+          "Two Ironmans. A 100-mile ultra. Powerlifting championships. HYROX. Senior Olympics competitor and national qualifier. I don't coach from theory — I coach from experience. I know what it takes because I've lived it.",
       },
       {
         icon: 'Timer',
