@@ -14,7 +14,7 @@ export function LeadMagnet() {
 
     setStatus('loading')
     try {
-      const res = await fetch('https://formspree.io/f/FORM_ID', {
+      const res = await fetch('https://formspree.io/f/mojnvjwb', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -28,12 +28,12 @@ export function LeadMagnet() {
         setEmail('')
       } else {
         // Fallback: open email client directly
-        window.location.href = `mailto:ddrhealthandfitness@yahoo.com?subject=Send Me the Free Guide&body=Hi David, I'd like to receive the free guide "The 5 Biggest Health Mistakes Busy Professionals Make." My email is: ${encodeURIComponent(email)}`
+        window.location.href = `mailto:ddrhealthandfitness@gmail.com?subject=Send Me the Free Guide&body=Hi David, I'd like to receive the free guide "The 5 Biggest Health Mistakes Busy Professionals Make." My email is: ${encodeURIComponent(email)}`
         setStatus('success')
       }
     } catch {
       // Fallback: open email client directly
-      window.location.href = `mailto:ddrhealthandfitness@yahoo.com?subject=Send Me the Free Guide&body=Hi David, I'd like to receive the free guide "The 5 Biggest Health Mistakes Busy Professionals Make." My email is: ${encodeURIComponent(email)}`
+      window.location.href = `mailto:ddrhealthandfitness@gmail.com?subject=Send Me the Free Guide&body=Hi David, I'd like to receive the free guide "The 5 Biggest Health Mistakes Busy Professionals Make." My email is: ${encodeURIComponent(email)}`
       setStatus('success')
     }
   }
