@@ -58,7 +58,7 @@ export const siteConfig = {
     headline: "I've Spent 25 Years Learning What Actually Works",
     paragraphs: [
       "I started as a competitor — marathons, Ironman triathlons, powerlifting, Olympic lifting, and most recently HYROX. I spent years pushing my own limits, finishing 100-mile ultra marathons and completing two Ironmans in under 12 hours each. I've been in the trenches.",
-      "But somewhere along the way, I realized that peak performance and sustainable health aren't the same thing. Most people don't need to train like an athlete. They need someone who understands the science AND knows how to make it fit a real life — with a job, a family, and about 45 minutes to spare.",
+      "Somewhere along the way, I realized that peak performance and sustainable health aren't the same thing. Most people don't need to train like an athlete. They need someone who understands the science AND knows how to make it fit a real life — with a job, a family, and about 45 minutes to spare.",
       "That's what I do now. With a BS in Exercise Science, AFAA certification, and a specialty in cancer exercise training through CETI, I've spent over three decades helping people build whole-life habits that actually stick. At DDR Health & Fitness, examining your whole life habits and providing individualized advice that is sound and real isn't just a tagline — it's the foundation of everything I do. Together, we set the path toward achieving your ultimate health and wellness goals.",
     ],
     philosophy: {
@@ -150,7 +150,7 @@ export const siteConfig = {
           'Remote programming for off days',
           'Nutrition planning & coaching',
           'Video form analysis & correction',
-          'Priority call & text access',
+          'Home gym setup & guidance',
           'Whole-life habit coaching',
         ],
         cta: 'Apply for Hybrid Coaching',
@@ -263,7 +263,7 @@ export const siteConfig = {
         icon: 'Scan',
         title: 'Whole-Life Assessment',
         description:
-          "Most trainers look at workouts. I look at everything — sleep, stress, nutrition, movement patterns, recovery. Because lasting change doesn't happen in a vacuum.",
+          "Most trainers look at workouts. We look at everything — sleep, stress, nutrition, movement patterns, recovery. Because lasting change doesn't happen in a vacuum.",
       },
       {
         icon: 'Flame',
@@ -294,7 +294,7 @@ export const siteConfig = {
     description:
       "I've spent 25+ years coaching professionals. These are the 5 patterns I see over and over — and the simple shifts that change everything. Get the guide free, delivered straight to your inbox.",
     cta: 'Send Me the Guide',
-    disclaimer: "No spam. Unsubscribe anytime. I'll also send you my weekly health tips.",
+    disclaimer: '',
   },
 
   // ─── 8. FAQ ────────────────────────────────────────────────
@@ -352,11 +352,6 @@ export const siteConfig = {
     subheadline:
       "Let's start with a conversation. No commitment, no sales pitch — just an honest look at where you are and where you want to be.",
     cta: { label: 'Schedule Your Free Consultation', href: '#booking' },
-    alt: {
-      text: 'Prefer email?',
-      label: 'ddrhealthandfitness@yahoo.com',
-      href: 'mailto:ddrhealthandfitness@yahoo.com',
-    },
   },
 
   // ─── 10. FOOTER ────────────────────────────────────────────

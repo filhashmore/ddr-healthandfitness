@@ -37,18 +37,21 @@ export function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
           {/* Brand */}
-          <a href="#" className="font-display text-xl font-bold text-slate tracking-tight focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500/50 rounded-lg" aria-label="DDR Health & Fitness — Home">
-            <span className="text-gold-500">DDR</span>{' '}
-            <span className="hidden sm:inline">Health & Fitness</span>
+          <a href="#" className="focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500/50 rounded-lg shrink-0" aria-label="DDR Health & Fitness — Home">
+            <img
+              src="/images/DDR_Logo_OutlineUP_2026.png"
+              alt="DDR Health & Fitness"
+              className="h-10 md:h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-4 lg:gap-8">
             {nav.links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-slate-dim hover:text-gold-400 transition-colors"
+                className="text-xs lg:text-sm font-medium text-slate-dim hover:text-gold-400 transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>

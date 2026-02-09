@@ -67,7 +67,7 @@ export function About() {
 
             {/* Credentials */}
             <AnimatedSection delay={0.3}>
-              <div className="space-y-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-1">
                 {about.credentials.map((cred, i) => (
                   <div
                     key={i}

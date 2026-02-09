@@ -59,16 +59,6 @@ export function FinalCTA() {
             </div>
           </div>
 
-          {/* Alt contact */}
-          <p className="mt-6 sm:mt-8 text-slate-muted text-sm">
-            {finalCta.alt.text}{' '}
-            <a
-              href={finalCta.alt.href}
-              className="text-gold-400 hover:text-gold-300 underline underline-offset-4 transition-colors"
-            >
-              {finalCta.alt.label}
-            </a>
-          </p>
         </AnimatedSection>
       </div>
     </section>
