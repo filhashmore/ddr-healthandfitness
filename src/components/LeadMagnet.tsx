@@ -73,8 +73,15 @@ export function LeadMagnet() {
 
               {status === 'success' ? (
                 <div className="max-w-md mx-auto mb-4">
-                  <p className="text-green-400 font-semibold text-lg mb-2">You're all set!</p>
-                  <p className="text-slate-dim text-sm">David will send you the guide shortly. Check your inbox.</p>
+                  <p className="text-green-400 font-semibold text-lg mb-3">You're in! Here's your free guide:</p>
+                  <a
+                    href="/DDR-Health-5-Mistakes-Guide.pdf"
+                    download
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gold-600 text-dark font-semibold rounded-lg hover:bg-gold-500 transition-colors"
+                  >
+                    <Download size={18} />
+                    Download Your Free Guide
+                  </a>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-4">
