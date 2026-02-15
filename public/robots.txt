@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ddrhealthandfitness.com/sitemap.xml
+Sitemap: https://ddr-healthandfitness.vercel.app/sitemap.xml
+
+# AI / LLM Context
+# Structured site context for AI agents and language models
+AI-Context: /llms.txt

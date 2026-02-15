@@ -1,0 +1,54 @@
+# DDR Health & Fitness
+
+> Personal training & nutrition coaching website for David D. Rogers — a Nashville-based certified personal trainer helping busy professionals 40+ get healthier with individualized, whole-life coaching.
+
+## Site Info
+
+- URL: https://ddr-healthandfitness.vercel.app
+- Author: David D. Rogers
+- Contact: ddrhealthandfitness@yahoo.com
+- Phone: 636-346-6752
+- Instagram: https://instagram.com/ddr_bna
+- Stack: React 19, TypeScript, Vite 7, Tailwind CSS v4, Framer Motion 12, Vercel
+- Type: Single-page marketing site (digital business card)
+
+## Pages
+
+- [Home](https://ddr-healthandfitness.vercel.app): Full site — about, programs, gallery, testimonials, FAQ, contact
+
+## About
+
+DDR Health & Fitness is the personal training practice of David D. Rogers, based in Nashville, TN with online coaching available nationwide. David holds a BS in Exercise Science, AFAA personal trainer certification, and CETI cancer exercise specialist certification. He has 25+ years in the health and wellness industry, is a 2x Ironman finisher, 100-mile ultra marathon finisher, Senior Olympics competitor and national qualifier, and sub-masters powerlifting mid-regional champion.
+
+David's approach centers on whole-life assessment — examining sleep, stress, nutrition, movement patterns, and recovery to build sustainable habits. His philosophy is "inside out" — core first, stability and balance, then strength. The practice focuses on health and wellness, not just fitness.
+
+## Key Features
+
+- Whole-Life Assessment: Evaluates fitness, nutrition, sleep, stress, and recovery before designing any plan
+- Three Coaching Tiers: 1:1 Online Coaching (remote), Hybrid Nashville Coaching (in-person + remote), Nutrition Coaching (standalone)
+- Lead Magnet: Free downloadable PDF guide — "The 5 Biggest Health Mistakes Busy Professionals Make"
+- Photo Gallery: 16 curated training and competition photos with lightbox viewer
+- Mobile-First Design: Optimized for QR code scanning and mobile browsing
+
+## Sections
+
+1. Hero — "Get Healthier Without Guessing" with CTA
+2. About / My Story — David's background, credentials, philosophy
+3. Photo Gallery — Training, competition, and coaching photos
+4. How It Works — 4-step process (Discovery Call → Assessment → Custom Plan → Results)
+5. Coaching Programs — Online, Hybrid Nashville, Nutrition-Only
+6. Testimonials — Client success stories
+7. Why DDR — 6 differentiators
+8. Lead Magnet — Free guide download with email capture
+9. FAQ — 8 common questions
+10. Final CTA — "1% Better Every Day" with email/phone contact
+11. Footer — Contact info, social links, legal
+
+## Contact
+
+David D. Rogers is available for personal training consultations. Free 20-minute discovery call available.
+
+- Email: ddrhealthandfitness@yahoo.com
+- Phone: 636-346-6752
+- Instagram: @ddr_bna / @atrainfitnesscoaching
+- Location: Nashville, TN (in-person) + Online (nationwide)
